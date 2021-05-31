@@ -1,0 +1,171 @@
+$Header-height: 68px;
+
+.Header {
+  height: $Header-height;
+  box-shadow: rgba(0,10,18, .2) 0px 3px 8px, rgba(246,246,246, .5) 0px 0px 1px;
+
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  &-logo {
+    img {
+      height: 80px;
+      width: 150px;
+      filter: invert(34%) sepia(72%) saturate(3150%) hue-rotate(333deg) brightness(110%) contrast(101%);
+    }
+    @include mq("tablet") {
+      img{
+        height: 102px;
+        width: 195px;
+      }
+    }
+  }
+  
+  &-switch {
+    position: relative;
+    left: 10px;
+    margin-left: auto;
+    @include mq("tablet") {
+      display: none;
+    }
+  }
+  &-menu {
+    pointer-events: none;
+    opacity: 0;
+    //transform: translateX(100%);
+    transition: 0.2s;
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: $Header-height;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    padding-bottom: 20px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 20px 30px rgba(black, 0.2);
+    
+
+    .Header.menu-show & {
+      &-search {
+        display: none;
+      }
+      opacity: 1;
+      //transform: translateX(0);
+      pointer-events: auto;
+    }
+
+    @include mq("tablet") {
+      pointer-events: auto;
+      opacity: 1;
+      //transform: translateX(0);
+      transition: 0s;
+      margin-left: auto;
+      flex-direction: row;
+      position: static;
+      box-shadow: none;
+      background: transparent;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+
+    &-search {
+      display: none;
+      margin-right: 10px;
+      flex-direction: column;
+      align-items: center;
+      color:rgb(148, 148, 148);
+      @include mq("tablet") {
+        display: flex;
+      }
+      svg {
+        @include mq("tablet") {
+          margin-left: 6px;
+          position: absolute;
+        }
+      }
+      input {
+        padding-left: 30px;
+        background-color: rgb(245,245,245);
+        font-weight: normal;
+      }
+      @include mq("tablet") {
+        flex-direction: row;
+      }
+    }
+
+    &-user {
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include mq("tablet") {
+        flex-direction: row;
+      }
+
+      a {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: $finger-size;
+        &:hover {
+          background-color: #eee;
+        }
+      }
+    }
+
+    &-item {
+      margin-top: 20px;
+      justify-content: center;
+      &-photo {
+        margin-top: 0px;
+        margin-left: 8px;
+        @include mq("tablet") {
+          margin-top: 0;
+          margin-left: 8px;
+        }
+      }
+      @include mq("tablet") {
+        margin-top: 0;
+      }
+    }
+
+    &-helper {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      @include mq("tablet") {
+        margin-left: 20px;
+        margin-top: 0;
+      }
+      select {
+        appearance: none;
+        border: 1px solid #e0e6f1;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: $finger-size;
+        border-radius: 0;
+        color: $color-pink;
+
+        &:nth-child(1) {
+          border-bottom-left-radius: $border-radius;
+          border-top-left-radius: $border-radius;
+        }
+        &:nth-child(2) {
+          border-left-width: 0;
+          border-bottom-right-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+        }
+      }
+    }
+  }
+
+}
