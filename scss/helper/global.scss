@@ -1,0 +1,73 @@
+body {
+  font-family: $font-family;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+.container {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+a {
+  transition: .15s;
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.select,
+select,
+.button,
+.text {
+  background-color: #fff;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: $border-radius;
+  border: 0;
+  height: $finger-size;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: $color-pink;
+
+  &-icon {
+    justify-content: center;
+    color: black;
+    padding-left: 0;
+    padding-right: 0;
+    width: $finger-size;
+    background-color: transparent;
+  }
+
+  &-full {
+    width: 100%;
+  }
+
+  &-pink {
+    color: white;
+    background-color: $color-pink;
+  }
+
+}
