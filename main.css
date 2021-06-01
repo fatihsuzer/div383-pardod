@@ -591,9 +591,15 @@ select,
       display: flex;
       flex-direction: row;
       overflow-x: scroll; }
-      @media (min-width: 992px) {
-        .Showcase-cards-list {
-          overflow-x: unset; } }
+      .Showcase-cards-list::-webkit-scrollbar {
+        border-radius: 10px;
+        height: 10px;
+        width: 8px; }
+      .Showcase-cards-list::-webkit-scrollbar-thumb {
+        background: #999;
+        border-radius: 10px; }
+      .Showcase-cards-list::-webkit-scrollbar-track {
+        border-radius: 10px; }
       .Showcase-cards-list-item {
         color: white;
         height: 120px;
@@ -608,15 +614,7 @@ select,
         cursor: pointer; }
         @media (min-width: 768px) {
           .Showcase-cards-list-item {
-            height: 124px;
-            width: 105px; } }
-        @media (min-width: 992px) {
-          .Showcase-cards-list-item {
-            height: 128px;
-            width: 110px; } }
-        @media (min-width: 1140px) {
-          .Showcase-cards-list-item {
-            height: 144px;
+            height: 150px;
             width: 120px; } }
         .Showcase-cards-list-item-info {
           font-weight: 600;
@@ -636,6 +634,22 @@ select,
             .Showcase-cards-list-item-container {
               display: flex;
               flex-direction: column; } }
+  .Showcase-advert-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.2);
+    width: 100%;
+    display: flex; }
+    .Showcase-advert-container img {
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      height: 60px; }
+      @media (min-width: 768px) {
+        .Showcase-advert-container img {
+          width: auto;
+          height: 90px; } }
 
 .bg-blue {
   background-color: #6bcebb; }

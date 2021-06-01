@@ -52,8 +52,17 @@
       display: flex;
       flex-direction: row;
       overflow-x: scroll;
-      @include mq("desktop") {
-        overflow-x: unset;
+      &::-webkit-scrollbar {
+        border-radius: 10px;
+        height: 10px;
+        width: 8px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #999;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
       }
       &-item {
         color: white;
@@ -68,15 +77,7 @@
         align-items: center;
         cursor: pointer;
         @include mq("tablet") {
-          height: 124px;
-          width: 105px;
-        }
-        @include mq("desktop") {
-          height: 128px;
-          width: 110px;
-        }
-        @include mq("inner-container") {
-          height: 144px;
+          height: 150px;
           width: 120px;
         }
         &-info {
@@ -98,6 +99,26 @@
             display: flex;
             flex-direction: column;
           }
+        }
+      }
+    }
+  }
+  &-advert {
+    &-container{
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+      padding: $gutter;
+      background-color: rgba(0,0,255, .2);
+      width: 100%;
+      display: flex;
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: 60px;
+        @include mq("tablet") {
+          width: auto;
+          height: 90px;
         }
       }
     }
