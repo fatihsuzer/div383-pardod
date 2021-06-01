@@ -1,0 +1,24 @@
+header.Header
+  .container
+    a.Header-logo(href='/')
+      img(src="img/logoblack.png" alt="")
+    button.Header-switch.button.button-icon.js-toggle-mobile-menu(type='button')
+      svg.icon.icon-menu
+        use(xlink:href='#icon-menu')  
+    .Header-menu
+      .Header-menu-search
+        svg.icon.icon-search
+          use(xlink:href='#icon-search')
+        input.text(type="text" placeholder="'Iphone 11'")
+      .Header-menu-user
+        a(href='') Register
+        a(href='') Sign In
+      a.Header-menu-item.button.button-pink(href='') List item
+        button.Header-menu-item-photo.button-pink
+          svg.icon.icon-menu
+            use(xlink:href='#icon-camera')
+      .Header-menu-helper
+        select
+          option(value='') EN
+        select
+          option(value='') LV
