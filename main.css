@@ -407,6 +407,30 @@ select,
     color: white;
     background-color: #ff3f55; }
 
+.bg-blue {
+  background-color: #6bcebb; }
+
+.bg-green {
+  background-color: #28a745; }
+
+.bg-deepblue {
+  background-color: #007bff; }
+
+.bg-orange {
+  background-color: #fd7e14; }
+
+.bg-yellow {
+  background-color: #ffc107; }
+
+.bg-pink {
+  background-color: #e83e8c; }
+
+.bg-lightblue {
+  background-color: #20c3f3; }
+
+.bg-purple {
+  background-color: #a175d9; }
+
 .Header {
   position: sticky;
   top: 0;
@@ -650,27 +674,47 @@ select,
         .Showcase-advert-container img {
           width: auto;
           height: 90px; } }
-
-.bg-blue {
-  background-color: #6bcebb; }
-
-.bg-green {
-  background-color: #28a745; }
-
-.bg-deepblue {
-  background-color: #007bff; }
-
-.bg-orange {
-  background-color: #fd7e14; }
-
-.bg-yellow {
-  background-color: #ffc107; }
-
-.bg-pink {
-  background-color: #e83e8c; }
-
-.bg-lightblue {
-  background-color: #20c3f3; }
-
-.bg-purple {
-  background-color: #a175d9; }
+  .Showcase-popular {
+    margin-top: 20px; }
+    .Showcase-popular-list {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 20px; }
+      @media (min-width: 768px) {
+        .Showcase-popular-list {
+          margin-bottom: 60px;
+          align-items: stretch; } }
+      .Showcase-popular-list-item {
+        box-shadow: rgba(0, 10, 18, 0.12) 0px 2px 2px, rgba(246, 246, 246, 0.5) 0px 0px 1px;
+        border-radius: 20px 20px 20px 20px;
+        margin-bottom: 20px; }
+        @media (min-width: 768px) {
+          .Showcase-popular-list-item {
+            flex-basis: 24%;
+            max-width: 25%;
+            display: block;
+            margin-right: 10px;
+            align-self: auto; }
+            .Showcase-popular-list-item:nth-child(1) {
+              margin-left: -8px; } }
+        .Showcase-popular-list-item-frame {
+          height: 246px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 20px 20px 0px 0px;
+          background-color: whitesmoke;
+          flex: 1 1 0%; }
+          .Showcase-popular-list-item-frame img {
+            height: 62%;
+            width: 80%; }
+        .Showcase-popular-list-item-button {
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0px 0px 20px 20px;
+          color: #424242;
+          font-weight: 400;
+          background-color: white; }
