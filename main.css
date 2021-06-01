@@ -664,13 +664,17 @@ select,
     margin-bottom: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 255, 0.2);
+    min-height: 120px;
     width: 100%;
-    display: flex; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .Showcase-advert-container img {
       margin-left: auto;
       margin-right: auto;
       width: auto;
-      height: 20px; }
+      height: 50px; }
       @media (min-width: 768px) {
         .Showcase-advert-container img {
           width: auto;

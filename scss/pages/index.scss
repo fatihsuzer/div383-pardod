@@ -109,13 +109,17 @@
       margin-bottom: $gutter;
       padding: $gutter;
       background-color: rgba(0, 0, 255, 0.2);
+      min-height: 120px;
       width: 100%;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       img {
         margin-left: auto;
         margin-right: auto;
         width: auto;
-        height: $gutter;
+        height: 50px;
         @include mq("tablet") {
           width: auto;
           height: 90px;
