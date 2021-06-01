@@ -6,6 +6,7 @@ $Header-height: 68px;
   height: $Header-height;
   background-color: white;
   box-shadow: rgba(0,10,18, .2) 0px 3px 8px, rgba(246,246,246, .5) 0px 0px 1px;
+  z-index: 1302;
 
   .container {
     position: relative;

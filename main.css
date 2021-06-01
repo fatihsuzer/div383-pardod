@@ -436,7 +436,8 @@ select,
   top: 0;
   height: 68px;
   background-color: white;
-  box-shadow: rgba(0, 10, 18, 0.2) 0px 3px 8px, rgba(246, 246, 246, 0.5) 0px 0px 1px; }
+  box-shadow: rgba(0, 10, 18, 0.2) 0px 3px 8px, rgba(246, 246, 246, 0.5) 0px 0px 1px;
+  z-index: 1302; }
   .Header .container {
     position: relative;
     display: flex;
@@ -669,7 +670,7 @@ select,
       margin-left: auto;
       margin-right: auto;
       width: auto;
-      height: 60px; }
+      height: 20px; }
       @media (min-width: 768px) {
         .Showcase-advert-container img {
           width: auto;
@@ -679,21 +680,25 @@ select,
     .Showcase-popular-list {
       display: flex;
       flex-flow: row wrap;
-      margin-top: 20px; }
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center; }
       @media (min-width: 768px) {
         .Showcase-popular-list {
-          margin-bottom: 60px;
+          margin-bottom: 20px;
           align-items: stretch; } }
       .Showcase-popular-list-item {
         box-shadow: rgba(0, 10, 18, 0.12) 0px 2px 2px, rgba(246, 246, 246, 0.5) 0px 0px 1px;
         border-radius: 20px 20px 20px 20px;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        cursor: pointer; }
         @media (min-width: 768px) {
           .Showcase-popular-list-item {
-            flex-basis: 24%;
+            padding-right: 8px;
+            padding-left: 8px;
+            flex-basis: 25%;
             max-width: 25%;
             display: block;
-            margin-right: 10px;
             align-self: auto; }
             .Showcase-popular-list-item:nth-child(1) {
               margin-left: -8px; } }
@@ -710,6 +715,8 @@ select,
             height: 62%;
             width: 80%; }
         .Showcase-popular-list-item-button {
+          padding-right: 8px;
+          padding-left: 8px;
           height: 40px;
           display: flex;
           align-items: center;
@@ -718,3 +725,78 @@ select,
           color: #424242;
           font-weight: 400;
           background-color: white; }
+  .Showcase-selected-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      .Showcase-selected-list {
+        margin-bottom: 20px;
+        align-items: stretch; } }
+    .Showcase-selected-list-item {
+      margin-top: 20px;
+      padding-right: 8px;
+      padding-left: 8px; }
+      @media (min-width: 768px) {
+        .Showcase-selected-list-item {
+          flex-basis: 25%;
+          max-width: 25%;
+          display: block; } }
+      .Showcase-selected-list-item-wrapper {
+        position: relative;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px;
+        background-color: white;
+        flex-direction: column; }
+        .Showcase-selected-list-item-wrapper-heart {
+          background-color: rgba(0, 0, 0, 0.4);
+          min-width: 36px;
+          min-height: 36px;
+          border-radius: 32px;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          display: flex;
+          position: absolute;
+          top: 8px;
+          right: 8px;
+          cursor: pointer; }
+          .Showcase-selected-list-item-wrapper-heart:hover {
+            color: #ff3f55;
+            background-color: rgba(255, 255, 255, 0.4);
+            transition: .4s; }
+        .Showcase-selected-list-item-wrapper-frame {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer; }
+          .Showcase-selected-list-item-wrapper-frame img {
+            max-height: 198px;
+            border-radius: 8px 8px 0px 0px;
+            -o-object-fit: cover;
+               object-fit: cover;
+            width: 100%; }
+        .Showcase-selected-list-item-wrapper-info {
+          padding: 12px 12px 22px;
+          box-sizing: border-box;
+          display: flex;
+          min-height: 132px;
+          flex-direction: column;
+          justify-content: space-around; }
+          .Showcase-selected-list-item-wrapper-info p {
+            letter-spacing: 0.3px; }
+
+.light {
+  color: #757575;
+  font-weight: normal;
+  font-size: 14px; }
+
+.strong {
+  cursor: pointer;
+  color: #2c2c2c;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap; }
