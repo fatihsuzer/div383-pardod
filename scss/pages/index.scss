@@ -1,0 +1,47 @@
+.Showcase {
+  margin-top: $gutter;
+
+  &-hero {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    @include mq("tablet") {
+      flex-direction: row;
+    }
+    &-info {
+      margin-top: auto;
+      @include mq("tablet") {
+        max-width: 50%;
+      }
+      &-title {
+        @include mq("tablet") {
+          color: rgb(44, 44, 44);
+          font-size: 2.5em;
+        }
+      }
+      &-search {
+        background-color: whitesmoke;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        width: 100%;
+        &:focus{
+          border-radius: 0;
+        }
+        @include mq("tablet") {
+          width: 85%;
+          padding: 6px;
+        }
+      }
+    }
+    &-image {
+      display: none;
+      @include mq("tablet") {
+        display: flex;
+        width: 400px;
+        height: 402px;
+        margin-left: auto;
+      }
+    }
+  }
+}
