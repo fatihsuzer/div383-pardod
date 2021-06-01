@@ -1,7 +1,10 @@
 $Header-height: 68px;
 
 .Header {
+  position: sticky;
+  top: 0;
   height: $Header-height;
+  background-color: white;
   box-shadow: rgba(0,10,18, .2) 0px 3px 8px, rgba(246,246,246, .5) 0px 0px 1px;
 
   .container {
@@ -9,11 +12,12 @@ $Header-height: 68px;
     display: flex;
     align-items: center;
     height: 100%;
+    width: 100%;
   }
   &-logo {
     img {
-      height: 80px;
-      width: 150px;
+      height: 68px;
+      width: 135px;
       filter: invert(34%) sepia(72%) saturate(3150%) hue-rotate(333deg) brightness(110%) contrast(101%);
     }
     @include mq("tablet") {
@@ -80,7 +84,7 @@ $Header-height: 68px;
       flex-direction: column;
       align-items: center;
       color:rgb(148, 148, 148);
-      @include mq("tablet") {
+      @include mq("desktop") {
         display: flex;
       }
       svg {

@@ -15,19 +15,19 @@
         max-width: 50%;
       }
       &-title {
+        margin-top: $gutter;
+        color: rgb(44, 44, 44);
         @include mq("tablet") {
-          color: rgb(44, 44, 44);
           font-size: 2.5em;
         }
       }
       &-search {
+        padding: 8px;
         background-color: whitesmoke;
         margin-top: 32px;
         margin-bottom: 32px;
         width: 100%;
-        &:focus{
-          border-radius: 0;
-        }
+        outline-width: 20px;
         @include mq("tablet") {
           width: 85%;
           padding: 6px;
@@ -44,4 +44,96 @@
       }
     }
   }
+  &-cards {
+    margin-top: $gutter;
+
+    &-list {
+      margin-top: $gutter;
+      display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      @include mq("desktop") {
+        overflow-x: unset;
+      }
+      &-item {
+        color: white;
+        height: 120px;
+        width: 100px;
+        margin-bottom: 15px;
+        margin-right: 8px;
+        margin-left: 8px;
+        border-radius: $border-radius;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        @include mq("tablet") {
+          height: 124px;
+          width: 105px;
+        }
+        @include mq("desktop") {
+          height: 128px;
+          width: 110px;
+        }
+        @include mq("inner-container") {
+          height: 144px;
+          width: 120px;
+        }
+        &-info {
+          font-weight: 600;
+          font-size: 0.7rem;
+          color:grey;
+          margin-bottom: 15px;
+          @include mq("tablet") {
+            font-size: 1rem;
+            cursor: pointer;
+          }
+        }
+        &-container{
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          align-items: center;
+          @include mq("tablet") {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
 }
+
+.bg-blue {
+  background-color: #6bcebb;
+} 
+
+.bg-green{
+  background-color: #28a745;
+}
+
+.bg-deepblue {
+  background-color: #007bff;
+}
+
+.bg-orange {
+  background-color: #fd7e14;
+}
+
+.bg-yellow {
+  background-color: #ffc107;
+}
+
+.bg-pink {
+  background-color: #e83e8c;
+}
+
+.bg-lightblue {
+  background-color: #20c3f3;
+}
+
+.bg-purple {
+  background-color: #a175d9;
+}
+
+
