@@ -823,221 +823,223 @@ select,
   font-weight: bold;
   white-space: nowrap; }
 
-.Advert-path {
-  margin-top: 20px;
-  font-size: 14px;
-  display: flow-root;
-  line-height: 16px;
-  color: #757575; }
-  .Advert-path-detail {
-    display: inline; }
-
-.Advert-hero {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex: 1; }
-  @media (min-width: 768px) {
-    .Advert-hero {
-      flex-direction: row; }
-      .Advert-hero:nth-child(2) {
-        flex-basis: 100%; } }
-  .Advert-hero .swiper {
-    display: block; }
-    .Advert-hero .swiper-container {
-      display: flex;
-      margin-left: 0;
-      margin-right: 0;
-      max-width: 100%;
-      max-height: 50%; }
-      @media (min-width: 768px) {
-        .Advert-hero .swiper-container {
-          max-width: 50%; } }
-    .Advert-hero .swiper-slide {
-      display: flex; }
-      .Advert-hero .swiper-slide img {
-        display: flex;
-        position: relative;
-        box-sizing: border-box;
-        -o-object-fit: contain;
-           object-fit: contain;
-        margin: auto;
-        max-width: 100%;
-        max-height: 40vh;
-        padding-bottom: 20px; }
-        @media (min-width: 768px) {
-          .Advert-hero .swiper-slide img {
-            border-radius: 24px;
-            max-width: 100%;
-            max-height: 100%; } }
-    .Advert-hero .swiper-pagination {
-      bottom: 0px; }
-  .Advert-hero-info {
-    padding: 4px;
+.Advert {
+  margin-bottom: 20px; }
+  .Advert-path {
+    margin-top: 20px;
+    font-size: 14px;
+    display: flow-root;
+    line-height: 16px;
+    color: #757575; }
+    .Advert-path-detail {
+      display: inline; }
+  .Advert-hero {
+    margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
-    max-height: 50%;
-    margin-top: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px; }
+    flex: 1;
+    margin-bottom: 30px; }
     @media (min-width: 768px) {
-      .Advert-hero-info {
-        margin-left: 20px;
-        margin-top: 0;
-        width: calc(50% - 20px);
-        padding: 20px; } }
-    .Advert-hero-info-price {
-      display: flex;
-      margin-bottom: 8px; }
-    .Advert-hero-info-icons {
-      display: inline-flex;
-      margin-left: auto; }
-      .Advert-hero-info-icons .heart {
-        min-width: 24px;
-        min-height: 24px;
-        color: #949494;
-        background-color: #eeeeee;
-        margin-right: 6px; }
-        .Advert-hero-info-icons .heart:hover {
-          color: #ff3f55;
-          background-color: rgba(255, 255, 255, 0.4);
-          transition: 0.4s; }
-    .Advert-hero-info-header {
-      margin-bottom: 8px; }
-    .Advert-hero-info-time {
-      display: flex; }
-      .Advert-hero-info-time-icon svg {
-        color: red; }
-      .Advert-hero-info-time-date {
+      .Advert-hero {
+        flex-direction: row; }
+        .Advert-hero:nth-child(2) {
+          flex-basis: 100%; } }
+    .Advert-hero .swiper {
+      display: block; }
+      .Advert-hero .swiper-container {
         display: flex;
-        align-items: center;
-        font-weight: bold; }
-    .Advert-hero-info-categories {
-      margin-top: 8px;
-      display: flex;
-      flex-wrap: wrap; }
-      .Advert-hero-info-categories-button {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #757575;
-        border: 2px solid #bdbdbd;
-        border-radius: 18px;
-        margin-right: 4px;
-        margin-top: 4px;
-        font-weight: 600;
-        font-size: 14px; }
-    .Advert-hero-info-desc {
-      margin-top: 20px;
-      padding: 12px;
-      display: flex;
-      border: 2px solid #bdbdbd;
-      border-radius: 8px;
-      height: 25vh;
-      overflow-y: scroll; }
-      .Advert-hero-info-desc::-webkit-scrollbar {
-        border-radius: 10px;
-        width: 8px; }
-      .Advert-hero-info-desc::-webkit-scrollbar-track {
-        background-color: #f1f1f1;
-        border-radius: 10px; }
-      .Advert-hero-info-desc::-webkit-scrollbar-thumb {
-        background-color: #888;
-        width: 10px;
-        border-radius: 10px; }
-      @media (min-width: 768px) {
-        .Advert-hero-info-desc {
-          height: 220px; } }
-  .Advert-hero-map {
-    margin-top: 20px;
-    width: 100%; }
-    @media (min-width: 768px) {
-      .Advert-hero-map {
-        width: 50%; } }
-    .Advert-hero-map iframe {
-      border-radius: 10px;
-      width: 100%;
-      height: 100%; }
-  .Advert-hero-user {
-    margin-top: 20px;
-    width: 100%;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px; }
-    .Advert-hero-user hr {
-      border-bottom: 1px solid #eeeeee; }
-    @media (min-width: 768px) {
-      .Advert-hero-user {
-        margin-left: 20px;
-        width: calc(50% - 20px); } }
-    .Advert-hero-user-header {
-      display: flex; }
-      .Advert-hero-user-header-icon {
-        display: flex;
-        width: 48px;
-        height: 72px; }
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        max-height: 50%; }
         @media (min-width: 768px) {
-          .Advert-hero-user-header-icon {
-            width: 48px;
-            height: 60px; } }
-        .Advert-hero-user-header-icon img {
-          border-radius: 50%;
-          cursor: pointer; }
-      .Advert-hero-user-header-info {
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column; }
-        .Advert-hero-user-header-info-name {
+          .Advert-hero .swiper-container {
+            max-width: 50%; } }
+      .Advert-hero .swiper-slide {
+        display: flex; }
+        .Advert-hero .swiper-slide img {
           display: flex;
-          font-weight: bold;
-          font-size: 1.5rem;
-          color: #2c2c2c;
-          cursor: pointer; }
-        .Advert-hero-user-header-info-rating {
-          display: flex;
-          color: #757575;
-          cursor: pointer; }
-      .Advert-hero-user-header-next {
+          position: relative;
+          box-sizing: border-box;
+          -o-object-fit: contain;
+             object-fit: contain;
+          margin: auto;
+          max-width: 100%;
+          max-height: 40vh;
+          padding-bottom: 20px; }
+          @media (min-width: 768px) {
+            .Advert-hero .swiper-slide img {
+              border-radius: 24px;
+              max-width: 100%;
+              max-height: 100%; } }
+      .Advert-hero .swiper-pagination {
+        bottom: 0px; }
+    .Advert-hero-info {
+      padding: 4px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-height: 50%;
+      margin-top: 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px; }
+      @media (min-width: 768px) {
+        .Advert-hero-info {
+          margin-left: 20px;
+          margin-top: 0;
+          width: calc(50% - 20px);
+          padding: 20px; } }
+      .Advert-hero-info-price {
         display: flex;
-        margin-left: auto;
-        justify-content: center;
-        align-items: center; }
-        .Advert-hero-user-header-next svg {
-          color: #757575;
-          background-color: white; }
-    .Advert-hero-user-shortmessage {
-      margin-bottom: 8px; }
-      .Advert-hero-user-shortmessage p {
-        color: #757575;
-        font-weight: 400;
-        font-size: 12px; }
-      .Advert-hero-user-shortmessage-buttons {
+        margin-bottom: 8px; }
+      .Advert-hero-info-icons {
+        display: inline-flex;
+        margin-left: auto; }
+        .Advert-hero-info-icons .heart {
+          min-width: 24px;
+          min-height: 24px;
+          color: #949494;
+          background-color: #eeeeee;
+          margin-right: 6px; }
+          .Advert-hero-info-icons .heart:hover {
+            color: #ff3f55;
+            background-color: rgba(255, 255, 255, 0.4);
+            transition: 0.4s; }
+      .Advert-hero-info-header {
+        margin-bottom: 8px; }
+      .Advert-hero-info-time {
+        display: flex; }
+        .Advert-hero-info-time-icon svg {
+          color: red; }
+        .Advert-hero-info-time-date {
+          display: flex;
+          align-items: center;
+          font-weight: bold; }
+      .Advert-hero-info-categories {
+        margin-top: 8px;
         display: flex;
         flex-wrap: wrap; }
-        .Advert-hero-user-shortmessage-buttons-button {
+        .Advert-hero-info-categories-button {
           padding-left: 20px;
           padding-right: 20px;
           height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
-          background-color: #ff3f55;
-          color: white;
+          color: #757575;
+          border: 2px solid #bdbdbd;
           border-radius: 18px;
           margin-right: 4px;
           margin-top: 4px;
           font-weight: 600;
           font-size: 14px; }
-    .Advert-hero-user-sendform {
-      margin-top: auto;
-      display: flex;
-      width: 100%;
-      flex-direction: column; }
-      .Advert-hero-user-sendform-text {
+      .Advert-hero-info-desc {
+        margin-top: 20px;
+        padding: 12px;
+        display: flex;
+        border: 2px solid #bdbdbd;
+        border-radius: 8px;
+        height: 25vh;
+        overflow-y: scroll; }
+        .Advert-hero-info-desc::-webkit-scrollbar {
+          border-radius: 10px;
+          width: 8px; }
+        .Advert-hero-info-desc::-webkit-scrollbar-track {
+          background-color: #f1f1f1;
+          border-radius: 10px; }
+        .Advert-hero-info-desc::-webkit-scrollbar-thumb {
+          background-color: #888;
+          width: 10px;
+          border-radius: 10px; }
+        @media (min-width: 768px) {
+          .Advert-hero-info-desc {
+            height: 220px; } }
+    .Advert-hero-map {
+      margin-top: 20px;
+      width: 100%; }
+      @media (min-width: 768px) {
+        .Advert-hero-map {
+          width: 50%; } }
+      .Advert-hero-map iframe {
+        border-radius: 10px;
         width: 100%;
+        height: 100%; }
+    .Advert-hero-user {
+      margin-top: 20px;
+      width: 100%;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px; }
+      .Advert-hero-user hr {
+        border-bottom: 1px solid #eeeeee; }
+      @media (min-width: 768px) {
+        .Advert-hero-user {
+          margin-left: 20px;
+          width: calc(50% - 20px); } }
+      .Advert-hero-user-header {
+        display: flex; }
+        .Advert-hero-user-header-icon {
+          display: flex;
+          width: 48px;
+          height: 72px; }
+          @media (min-width: 768px) {
+            .Advert-hero-user-header-icon {
+              width: 48px;
+              height: 60px; } }
+          .Advert-hero-user-header-icon img {
+            border-radius: 50%;
+            cursor: pointer; }
+        .Advert-hero-user-header-info {
+          margin-left: 20px;
+          display: flex;
+          flex-direction: column; }
+          .Advert-hero-user-header-info-name {
+            display: flex;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #2c2c2c;
+            cursor: pointer; }
+          .Advert-hero-user-header-info-rating {
+            display: flex;
+            color: #757575;
+            cursor: pointer; }
+        .Advert-hero-user-header-next {
+          display: flex;
+          margin-left: auto;
+          justify-content: center;
+          align-items: center; }
+          .Advert-hero-user-header-next svg {
+            color: #757575;
+            background-color: white; }
+      .Advert-hero-user-shortmessage {
         margin-bottom: 8px; }
+        .Advert-hero-user-shortmessage p {
+          color: #757575;
+          font-weight: 400;
+          font-size: 12px; }
+        .Advert-hero-user-shortmessage-buttons {
+          display: flex;
+          flex-wrap: wrap; }
+          .Advert-hero-user-shortmessage-buttons-button {
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ff3f55;
+            color: white;
+            border-radius: 18px;
+            margin-right: 4px;
+            margin-top: 4px;
+            font-weight: 600;
+            font-size: 14px; }
+      .Advert-hero-user-sendform {
+        margin-top: auto;
+        display: flex;
+        width: 100%;
+        flex-direction: column; }
+        .Advert-hero-user-sendform-text {
+          width: 100%;
+          margin-bottom: 8px; }
