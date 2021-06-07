@@ -192,22 +192,23 @@
   &-selected {
     &-list {
       display: flex;
-      flex-flow: row wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
       margin-top: $gutter;
       align-items: center;
       justify-content: center;
       @include mq("tablet") {
         margin-bottom: 20px;
-        align-items: stretch;
       }
       &-item {
         margin-top: $gutter;
         padding-right: 8px;
         padding-left: 8px;
+        width: 100%;
+        flex-grow: 1;
         @include mq("tablet") {
           flex-basis: 25%;
           max-width: 25%;
-          display: block;
         }
 
         &-wrapper {
@@ -236,13 +237,14 @@
             }
           }
           &-frame {
+            height: 100%;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             img {
-              max-height: 198px;
+              max-height: 164px;
               border-radius: 8px 8px 0px 0px;
               object-fit: cover;
               width: 100%;
