@@ -53,3 +53,29 @@ section.Advert
           a.Advert-hero-info-categories-button(href='') 2019
         .Advert-hero-info-desc 
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis turpis urna, non ornare risus porttitor at. Suspendisse quam turpis, varius eget tempus eget, finibus eu magna. Nullam varius sit amet leo a elementum. Morbi eu mi libero. Phasellus venenatis mattis ex at elementum. Morbi sed feugiat ex. Proin condimentum eget elit id molestie. Vestibulum viverra velit in magna vestibulum imperdiet. Nulla turpis diam, eleifend in ex vitae, suscipit aliquet est. Donec id dui tortor. Ut nec nisi augue. Mauris et mi placerat, varius elit nec, rhoncus elit. Donec purus felis, tempus rutrum mollis et, dignissim vitae eros.
+      .Advert-hero-map
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278405.8326267671!2d23.440984739869936!3d56.96515193162581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eedd07e8a104d3%3A0x78537e586c6c16df!2zSsWrcm1hbGE!5e0!3m2!1str!2slv!4v1623100359686!5m2!1str!2slv' style='border:0;' allowfullscreen='' loading='lazy')#mapDiv
+      .Advert-hero-user#userDiv
+        .Advert-hero-user-header
+          .Advert-hero-user-header-icon 
+            img(src="img/profile.jpg", alt="")
+          .Advert-hero-user-header-info 
+            .Advert-hero-user-header-info-name 
+              p John Jonathan
+            .Advert-hero-user-header-info-rating
+              p Rated 4.7/5
+          .Advert-hero-user-header-next 
+            svg.icon.heart 
+              use(xlink:href='#icon-forward') 
+        hr
+        .Advert-hero-user-shortmessage
+          p Send message to user:
+          .Advert-hero-user-shortmessage-buttons
+            a.Advert-hero-user-shortmessage-buttons-button(href='') Are you still selling?
+            a.Advert-hero-user-shortmessage-buttons-button(href='') Any discount on the price?
+            a.Advert-hero-user-shortmessage-buttons-button(href='') Is it in good condition?
+        .Advert-hero-user-sendform
+          input.Advert-hero-user-sendform-text.text(type="text" placeholder="Send message to John")
+          a.Advert-hero-user-shortmessage-buttons-button(href='') Send 
+          
+
