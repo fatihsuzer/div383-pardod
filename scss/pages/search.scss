@@ -1,0 +1,142 @@
+.Advert {
+  &-hero {
+    margin-top: $gutter;
+    display: flex;
+    flex-direction: column;
+    @include mq("tablet") {
+      flex-direction: row;
+    }
+    .swiper {
+      display: block;
+      &-container {
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        max-height: 50%;
+        @include mq("tablet") {
+          max-width: 50%;
+        }
+      }
+      &-wrapper {
+      }
+      &-slide {
+        display: flex;
+        //background-color: rgba(red, 0.3);
+        img {
+          display: flex;
+          position: relative;
+          box-sizing: border-box;
+          object-fit: contain;
+          margin: auto;
+          max-width: 100%;
+          max-height: 40vh;
+          padding-bottom: $gutter;
+          @include mq("tablet") {
+            border-radius: 24px;
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+      &-pagination {
+        bottom: 0px;
+      }
+    }
+    &-info {
+      padding: 4px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-height: 50%;
+      margin-top: $gutter;
+      &-price {
+        display: flex;
+        margin-bottom: 8px;
+      }
+      &-icons {
+        display: inline-flex;
+        margin-left: auto;
+        .heart {
+          min-width: 24px;
+          min-height: 24px;
+          color: rgb(148, 148, 148);
+          background-color: rgb(238, 238, 238);
+          margin-right: 6px;
+          &:hover {
+            color: $color-pink;
+            background-color: rgba(white, 0.4);
+            transition: 0.4s;
+          }
+        }
+      }
+      &-header {
+        margin-bottom: 8px;
+      }
+      &-time {
+        display: flex;
+        &-icon {
+          svg {
+            color: red;
+          }
+        }
+        &-date {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+        }
+      }
+      &-categories {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        &-button {
+          padding-left: 20px;
+          padding-right: 20px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgb(117, 117, 117);
+          border: 2px solid rgb(189, 189, 189);
+          border-radius: 18px;
+          margin-right: 4px;
+          margin-top: 4px;
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+      &-desc {
+        margin-top: $gutter;
+        padding: 12px;
+        display: flex;
+        border: 2px solid rgb(189, 189, 189);
+        border-radius: 8px;
+        height: 25vh;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+          border-radius: 10px;
+          width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: #f1f1f1;
+          border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #888;
+          width: 10px;
+          border-radius: 10px;
+        }
+        @include mq("tablet") {
+          height: 220px;
+        }
+      }
+      @include mq("tablet") {
+        margin-left: $gutter;
+        margin-top: 0;
+        width: 50%;
+        padding: $gutter;
+      }
+    }
+  }
+}

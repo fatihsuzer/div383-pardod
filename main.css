@@ -431,6 +431,21 @@ select,
 .bg-purple {
   background-color: #a175d9; }
 
+.heart {
+  background-color: rgba(0, 0, 0, 0.4);
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 32px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  display: flex;
+  cursor: pointer; }
+  .heart:hover {
+    color: #ff3f55;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.4s; }
+
 .Header {
   position: sticky;
   top: 0;
@@ -679,6 +694,9 @@ select,
         .Showcase-advert-container img {
           width: auto;
           height: 90px; } }
+    .Showcase-advert-container-text {
+      width: 100%;
+      text-align: center; }
   .Showcase-popular {
     margin-top: 20px; }
     .Showcase-popular-list {
@@ -754,7 +772,7 @@ select,
         box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px;
         background-color: white;
         flex-direction: column; }
-        .Showcase-selected-list-item-wrapper-heart {
+        .Showcase-selected-list-item-wrapper .heart {
           background-color: rgba(0, 0, 0, 0.4);
           min-width: 36px;
           min-height: 36px;
@@ -767,10 +785,10 @@ select,
           top: 8px;
           right: 8px;
           cursor: pointer; }
-          .Showcase-selected-list-item-wrapper-heart:hover {
+          .Showcase-selected-list-item-wrapper .heart:hover {
             color: #ff3f55;
             background-color: rgba(255, 255, 255, 0.4);
-            transition: .4s; }
+            transition: 0.4s; }
         .Showcase-selected-list-item-wrapper-frame {
           width: 100%;
           display: flex;
@@ -804,3 +822,119 @@ select,
   font-size: 16px;
   font-weight: bold;
   white-space: nowrap; }
+
+.Advert-hero {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .Advert-hero {
+      flex-direction: row; } }
+  .Advert-hero .swiper {
+    display: block; }
+    .Advert-hero .swiper-container {
+      display: flex;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+      max-height: 50%; }
+      @media (min-width: 768px) {
+        .Advert-hero .swiper-container {
+          max-width: 50%; } }
+    .Advert-hero .swiper-slide {
+      display: flex; }
+      .Advert-hero .swiper-slide img {
+        display: flex;
+        position: relative;
+        box-sizing: border-box;
+        -o-object-fit: contain;
+           object-fit: contain;
+        margin: auto;
+        max-width: 100%;
+        max-height: 40vh;
+        padding-bottom: 20px; }
+        @media (min-width: 768px) {
+          .Advert-hero .swiper-slide img {
+            border-radius: 24px;
+            max-width: 100%;
+            max-height: 100%; } }
+    .Advert-hero .swiper-pagination {
+      bottom: 0px; }
+  .Advert-hero-info {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 50%;
+    margin-top: 20px; }
+    .Advert-hero-info-price {
+      display: flex;
+      margin-bottom: 8px; }
+    .Advert-hero-info-icons {
+      display: inline-flex;
+      margin-left: auto; }
+      .Advert-hero-info-icons .heart {
+        min-width: 24px;
+        min-height: 24px;
+        color: #949494;
+        background-color: #eeeeee;
+        margin-right: 6px; }
+        .Advert-hero-info-icons .heart:hover {
+          color: #ff3f55;
+          background-color: rgba(255, 255, 255, 0.4);
+          transition: 0.4s; }
+    .Advert-hero-info-header {
+      margin-bottom: 8px; }
+    .Advert-hero-info-time {
+      display: flex; }
+      .Advert-hero-info-time-icon svg {
+        color: red; }
+      .Advert-hero-info-time-date {
+        display: flex;
+        align-items: center;
+        font-weight: bold; }
+    .Advert-hero-info-categories {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap; }
+      .Advert-hero-info-categories-button {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #757575;
+        border: 2px solid #bdbdbd;
+        border-radius: 18px;
+        margin-right: 4px;
+        margin-top: 4px;
+        font-weight: 600;
+        font-size: 14px; }
+    .Advert-hero-info-desc {
+      margin-top: 20px;
+      padding: 12px;
+      display: flex;
+      border: 2px solid #bdbdbd;
+      border-radius: 8px;
+      height: 25vh;
+      overflow-y: scroll; }
+      .Advert-hero-info-desc::-webkit-scrollbar {
+        border-radius: 10px;
+        width: 8px; }
+      .Advert-hero-info-desc::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 10px; }
+      .Advert-hero-info-desc::-webkit-scrollbar-thumb {
+        background-color: #888;
+        width: 10px;
+        border-radius: 10px; }
+      @media (min-width: 768px) {
+        .Advert-hero-info-desc {
+          height: 220px; } }
+    @media (min-width: 768px) {
+      .Advert-hero-info {
+        margin-left: 20px;
+        margin-top: 0;
+        width: 50%;
+        padding: 20px; } }
