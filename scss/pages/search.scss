@@ -1,4 +1,14 @@
 .Advert {
+  &-path {
+    margin-top: $gutter;
+    font-size: 14px;
+    display: flow-root;
+    line-height: 16px;
+    color: rgb(117, 117, 117);
+    &-detail {
+      display: inline;
+    }
+  }
   &-hero {
     margin-top: $gutter;
     display: flex;

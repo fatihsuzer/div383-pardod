@@ -823,6 +823,15 @@ select,
   font-weight: bold;
   white-space: nowrap; }
 
+.Advert-path {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flow-root;
+  line-height: 16px;
+  color: #757575; }
+  .Advert-path-detail {
+    display: inline; }
+
 .Advert-hero {
   margin-top: 20px;
   display: flex;
