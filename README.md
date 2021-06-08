@@ -3,12 +3,12 @@
 Pardod is a mobile-first designed front-end only website, aiming to make users sell their items faster than any other website, in Latvia.
 
 **Futures**
--Publishing an item after logging in
--Discovering new adverts around current location
--Advanced categorization opportunity
--Free of use
--Ability to send message to the seller, or receive messages form other users
--Mark an advert as favorite, then observe price changes.
+- Publishing an item after logging in
+- Discovering new adverts around current location
+- Advanced categorization opportunity
+- Free of use
+- Ability to send message to the seller, or receive messages form other users
+- Mark an advert as favorite, then observe price changes.
 
 ## [Demo website](https://fatihsuzer.github.io/div383-pardod/)
 
