@@ -995,16 +995,16 @@ select,
       .Advert-hero-user-header {
         display: flex; }
         .Advert-hero-user-header-icon {
-          display: flex;
+          display: flex; }
+        .Advert-hero-user-header img {
+          border-radius: 50%;
+          cursor: pointer;
           width: 48px;
-          height: 72px; }
+          height: 48px; }
           @media (min-width: 768px) {
-            .Advert-hero-user-header-icon {
+            .Advert-hero-user-header img {
               width: 48px;
-              height: 60px; } }
-          .Advert-hero-user-header-icon img {
-            border-radius: 50%;
-            cursor: pointer; }
+              height: 48px; } }
         .Advert-hero-user-header-info {
           margin-left: 20px;
           display: flex;

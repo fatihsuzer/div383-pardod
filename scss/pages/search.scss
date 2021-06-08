@@ -190,15 +190,15 @@
         display: flex;
         &-icon {
           display: flex;
-          width: 48px;
-          height: 72px;
-          @include mq("tablet") {
-            width: 48px;
-            height: 60px;
           }
           img {
             border-radius: 50%;
             cursor: pointer;
+            width: 48px;
+            height: 48px;
+            @include mq("tablet") {
+              width: 48px;
+              height: 48px;
           }
         }
         &-info {
