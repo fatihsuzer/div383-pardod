@@ -936,6 +936,10 @@ select,
           margin-top: 4px;
           font-weight: 600;
           font-size: 14px; }
+          .Advert-hero-info-categories-button:hover {
+            color: white;
+            background-color: #ff3f55;
+            transition: 0.4s; }
       .Advert-hero-info-desc {
         margin-top: 20px;
         padding: 12px;
