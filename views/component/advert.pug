@@ -1,83 +1,84 @@
-section.Showcase
+section.Advert 
   .container
-    .Showcase-hero
-      .Showcase-hero-info
-        h1.Showcase-hero-info-title Sell items you don't use, discover opportunities around you!
-        input.text.Showcase-hero-info-search(type="text" placeholder="Search for 'Television..'")
-      img.Showcase-hero-image(src="img/human.svg")
-    .Showcase-Cards 
-      h2.Showcase-cards-title Search by category 👀
-      .Showcase-cards-list
-        .Showcase-cards-list-item-container
-          a(href="search.html").Showcase-cards-list-item.bg-blue
+    .Advert-path
+      .Advert-path-detail
+        | Home page  
+      .Advert-path-detail.dot
+        | |
+      .Advert-path-detail
+        |  Cars around Jurmala  
+      .Advert-path-detail.dot
+        |  |
+      .Advert-path-detail
+        |  Bmw  
+      .Advert-path-detail.dot
+        |  |
+      .Advert-path-detail
+        |   3.20i
+    .Advert-hero
+      .swiper-container
+        // Additional required wrapper
+        .swiper-wrapper
+          // Slides
+          .swiper-slide
+            img.slide1(src="img/ymah251.jpg")
+          .swiper-slide
+            img.slide1(src="img/apple.jpg")
+          .swiper-slide 
+            img.slide1(src="img/jacket.jpg")
+        .swiper-button-prev
+        .swiper-pagination 
+        .swiper-button-next
+      .Advert-hero-info
+        .Advert-hero-info-price
+          h1 12.250 €
+          .Advert-hero-info-icons
+            svg.icon.heart
+              use(xlink:href='#icon-heart')  
+            svg.icon.heart
+              use(xlink:href='#icon-share')
+            svg.icon.heart
+              use(xlink:href='#icon-warning')
+        .Advert-hero-info-header
+          h3 2019 Bmw 3.20i 140 HP
+        .Advert-hero-info-time 
+          .Advert-hero-info-time-icon
             svg.icon.icon-menu
-              use(xlink:href='#icon-phone_iphone')  
-          h6.Showcase-cards-list-item-info Electronic
-        .Showcase-cards-list-item-container
-          a(href="search.html").Showcase-cards-list-item.bg-green
-            svg.icon.icon-menu
-              use(xlink:href='#icon-drive_eta')
-          h6.Showcase-cards-list-item-info Car
-        .Showcase-cards-list-item-container
-          a(href="search.html").Showcase-cards-list-item.bg-deepblue
-            svg.icon.icon-menu
-                use(xlink:href='#icon-basketball')
-          h6.Showcase-cards-list-item-info Sport
-        .Showcase-cards-list-item-container
-          a(href="search.html").Showcase-cards-list-item.bg-orange
-            svg.icon.icon-menu
-              use(xlink:href='#icon-motorcycle')
-          h6.Showcase-cards-list-item-info Motorcycle
-        .Showcase-cards-list-item-container
-          a(href="search.html").Showcase-cards-list-item.bg-yellow
-            svg.icon.icon-menu
-              use(xlink:href='#icon-weekend')
-          h6.Showcase-cards-list-item-info Home and Garden
-        .Showcase-cards-list-item-container
-          a(href="search.html").Showcase-cards-list-item.bg-pink
-            svg.icon.icon-menu
-              use(xlink:href='#icon-camera')
-          h6.Showcase-cards-list-item-info Fashion
-        .Showcase-cards-list-item-container
-          a(href="search.html").Showcase-cards-list-item.bg-lightblue
-            svg.icon.icon-menu
-              use(xlink:href='#icon-child_friendly')
-          h6.Showcase-cards-list-item-info Child and Baby
-        .Showcase-cards-list-item-container
-          a(href="search.html").Showcase-cards-list-item.bg-purple
-            svg.icon.icon-menu
-              use(xlink:href='#icon-house')
-          h6.Showcase-cards-list-item-info Estate       
-    .Showcase-advert
-      .Showcase-advert-container
-        img(src="img/adsense.png", alt="")
-        h2.Showcase-advert-container-text possible google adsense layout
-    .Showcase-popular
-      .Showcase-popular-title
-        h2 Popular products ✨
-      .Showcase-popular-list
-        .Showcase-popular-list-item
-          .Showcase-popular-list-item-frame
-            img(src="img/kitchenxs.png", alt="")
-          .Showcase-popular-list-item-button
-            span Kitchen Utensils
-        .Showcase-popular-list-item
-          .Showcase-popular-list-item-frame
-            img(src="img/car.png", alt="")
-          .Showcase-popular-list-item-button
-            span Car
-        .Showcase-popular-list-item
-          .Showcase-popular-list-item-frame
-            img(src="img/phone.png", alt="")
-          .Showcase-popular-list-item-button
-            span Smart Phone
-        .Showcase-popular-list-item
-          .Showcase-popular-list-item-frame
-            img(src="img/tent.png", alt="")
-          .Showcase-popular-list-item-button
-            span Camping Tent
+              use(xlink:href='#icon-fire') 
+          .Advert-hero-info-time-date
+            p 2 hours ago
+        .Advert-hero-info-categories 
+          a.Advert-hero-info-categories-button(href='') Bmw
+          a.Advert-hero-info-categories-button(href='') 3.20i
+          a.Advert-hero-info-categories-button(href='') 2019
+        .Advert-hero-info-desc 
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis turpis urna, non ornare risus porttitor at. Suspendisse quam turpis, varius eget tempus eget, finibus eu magna. Nullam varius sit amet leo a elementum. Morbi eu mi libero. Phasellus venenatis mattis ex at elementum. Morbi sed feugiat ex. Proin condimentum eget elit id molestie. Vestibulum viverra velit in magna vestibulum imperdiet. Nulla turpis diam, eleifend in ex vitae, suscipit aliquet est. Donec id dui tortor. Ut nec nisi augue. Mauris et mi placerat, varius elit nec, rhoncus elit. Donec purus felis, tempus rutrum mollis et, dignissim vitae eros.
+      .Advert-hero-map
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278405.8326267671!2d23.440984739869936!3d56.96515193162581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eedd07e8a104d3%3A0x78537e586c6c16df!2zSsWrcm1hbGE!5e0!3m2!1str!2slv!4v1623100359686!5m2!1str!2slv' style='border:0;' allowfullscreen='' loading='lazy')#mapDiv
+      .Advert-hero-user#userDiv
+        .Advert-hero-user-header
+          .Advert-hero-user-header-icon 
+            img(src="img/profile.jpg", alt="")
+          .Advert-hero-user-header-info 
+            .Advert-hero-user-header-info-name 
+              p John Jonathan
+            .Advert-hero-user-header-info-rating
+              p Rated 4.7/5
+          .Advert-hero-user-header-next 
+            svg.icon.heart 
+              use(xlink:href='#icon-forward') 
+        hr
+        .Advert-hero-user-shortmessage
+          p Send message to user:
+          .Advert-hero-user-shortmessage-buttons
+            a.Advert-hero-user-shortmessage-buttons-button(href='') Are you still selling?
+            a.Advert-hero-user-shortmessage-buttons-button(href='') Any discount on the price?
+            a.Advert-hero-user-shortmessage-buttons-button(href='') Is it in good condition?
+        .Advert-hero-user-sendform
+          input.Advert-hero-user-sendform-text.text(type="text" placeholder="Send message to John")
+          a.Advert-hero-user-shortmessage-buttons-button(href='') Send 
     .Showcase-selected
-      h2.Showcase-selected-title Selected for you ❤️
+      h2.Showcase-selected-title Releated to this advert 👓
       .Showcase-selected-list
         .Showcase-selected-list-item
           .Showcase-selected-list-item-wrapper
@@ -175,3 +176,5 @@ section.Showcase
                 p.strong Yamaha MT-25 for sale
                 p.light Motorcycle
                 p.strong 4500€
+
+
