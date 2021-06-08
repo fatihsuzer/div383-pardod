@@ -103,20 +103,3 @@ select,
 .bg-purple {
   background-color: #a175d9;
 }
-
-.heart {
-  background-color: rgba(0, 0, 0, 0.4);
-  min-width: 36px;
-  min-height: 36px;
-  border-radius: 32px;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  display: flex;
-  cursor: pointer;
-  &:hover {
-    color: $color-pink;
-    background-color: rgba(white, 0.4);
-    transition: 0.4s;
-  }
-}
