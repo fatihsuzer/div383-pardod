@@ -125,6 +125,10 @@
           height: 90px;
         }
       }
+      &-text {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
   &-popular {
@@ -188,22 +192,23 @@
   &-selected {
     &-list {
       display: flex;
-      flex-flow: row wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
       margin-top: $gutter;
       align-items: center;
       justify-content: center;
       @include mq("tablet") {
         margin-bottom: 20px;
-        align-items: stretch;
       }
       &-item {
         margin-top: $gutter;
         padding-right: 8px;
         padding-left: 8px;
+        width: 100%;
+        flex-grow: 1;
         @include mq("tablet") {
           flex-basis: 25%;
           max-width: 25%;
-          display: block;
         }
 
         &-wrapper {
@@ -212,7 +217,7 @@
           box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px;
           background-color: white;
           flex-direction: column;
-          &-heart{
+          .heart {
             background-color: rgba(0, 0, 0, 0.4);
             min-width: 36px;
             min-height: 36px;
@@ -225,20 +230,21 @@
             top: 8px;
             right: 8px;
             cursor: pointer;
-            &:hover{
-              color:$color-pink;
-              background-color: rgba(white, .4);
-              transition: .4s;
+            &:hover {
+              color: $color-pink;
+              background-color: rgba(white, 0.4);
+              transition: 0.4s;
             }
           }
           &-frame {
+            height: 100%;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             img {
-              max-height: 198px;
+              max-height: 164px;
               border-radius: 8px 8px 0px 0px;
               object-fit: cover;
               width: 100%;
