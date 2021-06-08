@@ -1,0 +1,70 @@
+section.User
+  .container
+    .User-header
+      .User-header-icon 
+        img(src="img/profile.jpg", alt="")
+      .User-header-info 
+        h2 John Jonathan
+        .User-header-info-stars
+          svg.icon
+            use(xlink:href='#icon-star')
+          svg.icon
+            use(xlink:href='#icon-star')
+          svg.icon
+            use(xlink:href='#icon-star')
+          svg.icon
+            use(xlink:href='#icon-star')
+          svg.icon
+            use(xlink:href='#icon-star')
+        .User-header-info-location
+          p Jurmala
+      .vl
+      .User-header-detail
+        p Shared 3 adverts so far.
+        p Registered using:
+        svg.icon
+            use(xlink:href='#icon-email')
+    .User-label
+        button.User-label-selling.js-selling.active Selling
+        button.User-label-sold.js-sold  Sold
+    .User-adverts
+      .Showcase-selected.shown
+        .Showcase-selected-list
+          a(href="search.html").Showcase-selected-list-item
+            .Showcase-selected-list-item-wrapper
+                .Showcase-selected-list-item-wrapper.heart
+                  svg.icon.icon-menu
+                    use(xlink:href='#icon-heart')  
+                .Showcase-selected-list-item-wrapper-frame
+                  img(src="img/apple.jpg", alt="")
+                .Showcase-selected-list-item-wrapper-info
+                  p.light Riga · 1,4 km
+                  p.strong Huawei P20 lite
+                  p.light Smart Phone
+                  p.strong 250€
+          a(href="search.html").Showcase-selected-list-item
+            .Showcase-selected-list-item-wrapper
+                .Showcase-selected-list-item-wrapper.heart
+                  svg.icon.icon-menu
+                    use(xlink:href='#icon-heart')  
+                .Showcase-selected-list-item-wrapper-frame
+                  img(src="img/moto.jpeg", alt="")
+                .Showcase-selected-list-item-wrapper-info
+                  p.light Jurmala · 14,2 km
+                  p.strong Yamaha MT-25 for sale
+                  p.light Motorcycle
+                  p.strong 4500€
+      .Showcase-selected#sold
+        .Showcase-selected-list
+          a(href="search.html").Showcase-selected-list-item
+            .Showcase-selected-list-item-wrapper
+                .Showcase-selected-list-item-wrapper.heart
+                  svg.icon.icon-menu
+                    use(xlink:href='#icon-heart')  
+                .Showcase-selected-list-item-wrapper-frame
+                  img(src="img/apple.jpg", alt="")
+                .Showcase-selected-list-item-wrapper-info
+                  p.light Riga · 1,4 km
+                  p.strong Huawei P20 lite
+                  p.light Smart Phone
+                  p.strong 250€

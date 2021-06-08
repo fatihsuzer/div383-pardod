@@ -1,0 +1,91 @@
+.User {
+  margin-top: $gutter;
+  &-header {
+    display: flex;
+    margin-top: $gutter;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: $gutter;
+    @include mq("tablet") {
+      flex-direction: row;
+    }
+
+    &-icon {
+      display: flex;
+      img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        @include mq("tablet") {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+    &-info {
+      margin-top: 4px;
+      @include mq("tablet") {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      &-stars {
+        display: flex;
+        color: rgb(255, 210, 0);
+      }
+      &-location {
+        margin-top: 4px;
+        color: rgb(117, 117, 117);
+      }
+    }
+    &-detail {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      color: rgb(117, 117, 117);
+      @include mq("tablet") {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      svg {
+        color: rgb(117, 117, 117);
+      }
+    }
+  }
+  &-label {
+    display: flex;
+    background: 0;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    @include mq("tablet") {
+      margin-top: $gutter;
+    }
+    button {
+      cursor: pointer;
+      color: $color-pink;
+      background: white;
+      padding: 20px;
+    }
+    .active {
+      border-bottom: 3px solid rgb(255, 63, 85);
+    }
+  }
+  &-adverts {
+    .Showcase-selected {
+      display: none;
+      &.shown {
+        display: block;
+      }
+    }
+  }
+}
+
+.vl {
+  width: 1px;
+  background-color: rgb(224, 224, 224);
+  display: none;
+  @include mq("tablet") {
+    display: block;
+    height: 150px;
+  }
+}

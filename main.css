@@ -528,13 +528,15 @@ select,
         .Header-menu-search {
           flex-direction: row; } }
     .Header-menu-user {
-      margin-right: 10px;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      margin-top: 20px; }
       @media (min-width: 768px) {
         .Header-menu-user {
-          flex-direction: row; } }
+          flex-direction: row;
+          margin-top: 0;
+          margin-right: 10px; } }
       .Header-menu-user a {
         width: 100%;
         display: inline-flex;
@@ -545,6 +547,13 @@ select,
         height: 44px; }
         .Header-menu-user a:hover {
           background-color: #eee; }
+      .Header-menu-user-photo {
+        display: flex;
+        margin-right: 0px; }
+        .Header-menu-user-photo img {
+          height: 48px;
+          width: 48px;
+          border-radius: 50%; }
     .Header-menu-item {
       margin-top: 20px;
       justify-content: center; }
@@ -564,7 +573,7 @@ select,
       justify-content: center; }
       @media (min-width: 768px) {
         .Header-menu-helper {
-          margin-left: 20px;
+          margin-left: 10px;
           margin-top: 0; } }
       .Header-menu-helper select {
         -webkit-appearance: none;
@@ -1049,3 +1058,77 @@ select,
         .Advert-hero-user-sendform-text {
           width: 100%;
           margin-bottom: 8px; }
+
+.User {
+  margin-top: 20px; }
+  .User-header {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; }
+    @media (min-width: 768px) {
+      .User-header {
+        flex-direction: row; } }
+    .User-header-icon {
+      display: flex; }
+      .User-header-icon img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%; }
+        @media (min-width: 768px) {
+          .User-header-icon img {
+            width: 150px;
+            height: 150px; } }
+    .User-header-info {
+      margin-top: 4px; }
+      @media (min-width: 768px) {
+        .User-header-info {
+          margin-left: 10px;
+          margin-right: 10px; } }
+      .User-header-info-stars {
+        display: flex;
+        color: #ffd200; }
+      .User-header-info-location {
+        margin-top: 4px;
+        color: #757575; }
+    .User-header-detail {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      color: #757575; }
+      @media (min-width: 768px) {
+        .User-header-detail {
+          margin-left: 10px;
+          margin-right: 10px; } }
+      .User-header-detail svg {
+        color: #757575; }
+  .User-label {
+    display: flex;
+    background: 0;
+    border-bottom: 1px solid #dddddd; }
+    @media (min-width: 768px) {
+      .User-label {
+        margin-top: 20px; } }
+    .User-label button {
+      cursor: pointer;
+      color: #ff3f55;
+      background: white;
+      padding: 20px; }
+    .User-label .active {
+      border-bottom: 3px solid #ff3f55; }
+  .User-adverts .Showcase-selected {
+    display: none; }
+    .User-adverts .Showcase-selected.shown {
+      display: block; }
+
+.vl {
+  width: 1px;
+  background-color: #e0e0e0;
+  display: none; }
+  @media (min-width: 768px) {
+    .vl {
+      display: block;
+      height: 150px; } }
