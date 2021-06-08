@@ -1,0 +1,181 @@
+.Message {
+  margin-top: $gutter;
+  &-frame {
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 8px;
+    &-header {
+      display: flex;
+      flex-direction: column;
+      border-bottom: solid rgb(238, 238, 238);
+      padding: 8px;
+      @include mq("tablet") {
+        flex-direction: row;
+        align-items: center;
+      }
+      &-left {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 12px;
+        @include mq("tablet") {
+          margin-bottom: 0;
+        }
+        .back {
+          margin-left: 4px;
+          margin-right: 12px;
+          fill: rgb(148, 148, 148);
+          height: 36px;
+          width: 36px;
+        }
+        &-icon {
+          display: flex;
+          img {
+            border-radius: 50%;
+            height: 36px;
+            width: 36px;
+            @include mq("tablet") {
+              height: 64px;
+              width: 64px;
+            }
+          }
+        }
+        &-user {
+          display: flex;
+          margin-left: 8px;
+          flex-direction: column;
+          justify-content: center;
+          &-name {
+            display: flex;
+            h2 {
+              font-size: 1em;
+              @include mq("tablet") {
+                font-size: 1.5em;
+              }
+            }
+          }
+          &-stars {
+            display: flex;
+            color: rgb(255, 210, 0);
+            svg {
+              height: 16px;
+              width: 16px;
+              @include mq("tablet") {
+                height: 24px;
+                width: 24px;
+              }
+            }
+          }
+        }
+      }
+
+      &-product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin-right: auto;
+
+        @include mq("tablet") {
+          margin-right: 0;
+          margin-left: auto;
+        }
+        &-head {
+          display: flex;
+          flex-direction: column;
+          margin-left: 8px;
+          h3 {
+            color: rgb(44, 44, 44);
+            font-size: 1em;
+          }
+          &-price {
+            display: flex;
+            p {
+              color: rgb(117, 117, 117);
+              font-weight: 600;
+            }
+          }
+        }
+        &-icon {
+          display: flex;
+          margin-left: 52px;
+          @include mq("tablet") {
+            margin-left: 0;
+          }
+          img {
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            @include mq("tablet") {
+              width: 64px;
+              height: 64px;
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      padding: $gutter;
+      overflow-y: scroll;
+      max-height: 45vh;
+      @include mq("tablet") {
+        max-height: 60vh;
+      }
+      &::-webkit-scrollbar {
+        border-radius: 10px;
+        height: 10px;
+        width: 8px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #999;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+      &-text {
+        padding: 8px;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 223, 228);
+        border-radius: 24px;
+        color: rgb(44, 44, 44);
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        @include mq("tablet") {
+          max-width: 40%;
+        }
+        &-secondary {
+          color: rgb(97, 97, 97);
+        }
+      }
+    }
+    &-form {
+      &-buttons {
+        margin-top: $gutter;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      &-input {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: row;
+        a{
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+.left {
+  margin-right: auto;
+  text-align: left;
+  background-color: rgb(245, 245, 245);
+}
+.right {
+  margin-left: auto;
+  text-align: right;
+}
