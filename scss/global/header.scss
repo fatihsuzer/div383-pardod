@@ -5,7 +5,8 @@ $Header-height: 68px;
   top: 0;
   height: $Header-height;
   background-color: white;
-  box-shadow: rgba(0,10,18, .2) 0px 3px 8px, rgba(246,246,246, .5) 0px 0px 1px;
+  box-shadow: rgba(0, 10, 18, 0.2) 0px 3px 8px,
+    rgba(246, 246, 246, 0.5) 0px 0px 1px;
   z-index: 1302;
 
   .container {
@@ -19,16 +20,17 @@ $Header-height: 68px;
     img {
       height: 68px;
       width: 135px;
-      filter: invert(34%) sepia(72%) saturate(3150%) hue-rotate(333deg) brightness(110%) contrast(101%);
+      filter: invert(34%) sepia(72%) saturate(3150%) hue-rotate(333deg)
+        brightness(110%) contrast(101%);
     }
     @include mq("tablet") {
-      img{
+      img {
         height: 102px;
         width: 195px;
       }
     }
   }
-  
+
   &-switch {
     position: relative;
     left: 10px;
@@ -53,7 +55,6 @@ $Header-height: 68px;
     flex-direction: column;
     background-color: white;
     box-shadow: 0 20px 30px rgba(black, 0.2);
-    
 
     .Header.menu-show & {
       &-search {
@@ -84,7 +85,7 @@ $Header-height: 68px;
       margin-right: 10px;
       flex-direction: column;
       align-items: center;
-      color:rgb(148, 148, 148);
+      color: rgb(148, 148, 148);
       @include mq("desktop") {
         display: flex;
       }
@@ -96,7 +97,7 @@ $Header-height: 68px;
       }
       input {
         padding-left: 30px;
-        background-color: rgb(245,245,245);
+        background-color: rgb(245, 245, 245);
         font-weight: normal;
       }
       @include mq("tablet") {
@@ -105,12 +106,14 @@ $Header-height: 68px;
     }
 
     &-user {
-      margin-right: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: $gutter;
       @include mq("tablet") {
         flex-direction: row;
+        margin-top: 0;
+        margin-right: 10px;
       }
 
       a {
@@ -123,6 +126,15 @@ $Header-height: 68px;
         height: $finger-size;
         &:hover {
           background-color: #eee;
+        }
+      }
+      &-photo {
+        display: flex;
+        margin-right: 0px;
+        img {
+          height: 48px;
+          width: 48px;
+          border-radius: 50%;
         }
       }
     }
@@ -148,7 +160,7 @@ $Header-height: 68px;
       display: flex;
       justify-content: center;
       @include mq("tablet") {
-        margin-left: 20px;
+        margin-left: 10px;
         margin-top: 0;
       }
       select {
@@ -172,5 +184,4 @@ $Header-height: 68px;
       }
     }
   }
-
 }
